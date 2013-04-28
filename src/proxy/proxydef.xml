@@ -10,8 +10,6 @@
     <matches>
       <match name="property" value="name" />
     </matches>
-	<overlayblocks>
-	</overlayblocks>
     <textblocks>
       <link block="name">
         <property name="Name"  />
