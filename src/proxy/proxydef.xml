@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<templates>
+  <blocks>
+    <block type="" id="" src=""> <!-- a block that will be linked in the templates -->
+      <!-- various options for a block are placed here -->
+    </block>
+  </blocks>
+  <template src="" default="True">
+    <matches>
+      <match name="property" value="" /><!-- match a template to a specified property and value-->
+    </matches>
+    <overlayblocks>
+      <link block="" /><!-- the blocks for overlays are linked here like this -->
+    </overlayblocks>
+    <textblocks>
+      <link block="" separator=""><!-- the blocks for text are linked here like this -->
+        <property name=""  /><!-- The property defined on a card to be placed here -->
+      </link>
+    </textblocks>
+  </template>
+</templates>

@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<game name="Standard Playing Cards" id="8f437fff-fc8f-4abf-a2e6-f77ebff2ac6d" octgnVersion="3.1.0.0" version="2.0.0.0" 
+    markersize="25" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tags="cards standard" description="Standard playing cards" setsurl="http://www.octgn.net" 
+	gameurl="http://www.octgn.net" authors="brine, magnus, kelly elton" iconurl="http://www.octgn.net">
+    <scripts>
+      <script src="scripts/actions.py" />
+    </scripts>
+    <proxygen definitionsrc="proxy/proxydef.xml">
+    </proxygen>
+    <globalvariables>
+        <globalvariable name="dealer" value="1"/>
+    </globalvariables>
+    <card back="cards/back.png" front="cards/front.png" width="63" height="88" cornerRadius="0">
+        <property name="Suit" type="String" textKind="Tokens" />
+        <property name="Rank" type="String" textKind="Tokens" />
+    </card>
+    <table name="Table" visibility="undefined" ordered="False" width="800" height="650" background="background/felt.png" backgroundStyle="uniformToFill">
+        <groupaction menu="Draw" shortcut="ctrl+D" default="True" execute="draw" />
+        <groupaction menu="Draw X Cards" shortcut="ctrl+shift+D" execute="drawMany" />
+        <groupaction menu="Send Top X Cards to the Discard Pile" execute="mill" />
+        <groupaction menu="Shuffle" shortcut="ctrl+S" execute="shuffle" />
+        <groupaction menu="Roll a 6-sided Die" shortcut="ctrl+r" execute="rolldice" />
+        <groupaction menu="Flip a Coin" shortcut="ctrl+shift+r" execute="flipcoin" />
+        <groupaction menu="Interrupt Game" shortcut="enter" execute="interrupt" />
+        <groupaction menu="Pass" shortcut="tab" execute="passturn" />
+        <groupaction menu="Sit/Stand" shortcut="alt+s" execute="sitstand" />
+        <groupaction menu="SSStatus" shortcut="ctrl+alt+s"  execute="ssstatus" />
+        <groupaction menu="Become Dealer" shortcut="ctrl+B" execute="becomedealer" />
+        <groupaction menu="Who's Dealer?" execute="whosdealer" />
+        <cardaction menu="Turn card Sideways" default="True" execute="tap" />
+        <cardaction menu="Flip Card" shortcut="ctrl+f" execute="flip" />
+        <cardaction menu="Discard Card" shortcut="del" execute="discard" />
+        <cardaction menu="Add/Remove Red Highlight" shortcut="ctrl+A" execute="highlightcard" />
+        <cardaction menu="Add Marker" shortcut="ctrl+Q" execute="addmarker" />
+        <cardaction menu="Remove Marker" shortcut="ctrl+W" execute="removemarker" />
+        <cardaction menu="Add Custom Marker..." shortcut="ctrl+shift+Q" batchExecute="addanymarker" />
+    </table>
+   <player summary="Hand:{#Hand} Score:{#Score}">
+    <globalvariable name="standing" value="1" />
+    <counter name="Score" icon="counters/score.png" />
+    <hand name="Hand" shortcut="ctrl+H" visibility="me" ordered="False" width="63" height="88" icon="groups/hand.png">
+       <cardaction menu="Discard Card" shortcut="del" execute="discard" />
+    </hand>
+  </player>
+  <shared>
+    <group name="Deck" shortcut="ctrl+E" visibility="none" width="63" height="88" icon="groups/deck.png">
+        <groupaction menu="Deal X Cards" default="True" execute="dealMany" />
+        <groupaction menu="Deal X Cards To Table" execute="dealManyToTable" />
+        <groupaction menu="Deal X Cards To Table(face down)" execute="dealManyToTableDown" />
+       <groupaction menu="Draw" shortcut="ctrl+D" execute="draw" />
+       <groupaction menu="Draw X Cards" shortcut="ctrl+shift+D" execute="drawMany" />
+       <groupaction menu="Draw X Cards Face Down" execute="drawManyDown" />
+       <groupaction menu="Send Top X Cards to the Discard Pile" execute="mill" />
+       <groupaction menu="Shuffle" shortcut="ctrl+S" execute="shuffle" />
+    </group>
+    <group name="Discard" shortcut="del" visibility="all" width="63" height="88" icon="groups/discardpile.png">
+       <groupaction menu="Shuffle" shortcut="ctrl+S" execute="shuffle" />
+       <groupaction menu="Shuffle Into Deck" execute="shuffleIntoDeck" />
+    </group>
+  </shared>
+  <deck>
+      <section name="Main" group="Deck" />
+      <section name="Main2" group="Discard" />
+  </deck>
+  <sharedDeck>
+      <section name="Shared" group="Deck" />
+  </sharedDeck>
+</game>
