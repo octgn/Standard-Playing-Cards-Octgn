@@ -151,7 +151,7 @@ def mill(group, count = None):
     if len(shared.Deck) == 0: return
     mute()
     if count == None: count = askInteger("Mill how many cards?", 1)
-    for c in shared.Deck.top(count): c.moveTo(me.Discard)
+    for c in shared.Deck.top(count): c.moveTo(shared.Discard)
     notify("{} mills the top {} cards from the Deck.".format(me, count))
 
 def shuffle(group, x = 0, y = 0):
