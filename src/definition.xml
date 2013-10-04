@@ -59,10 +59,9 @@
     </group>
   </shared>
   <deck>
-      <section name="Main" group="Deck" />
-      <section name="Main2" group="Discard" />
   </deck>
   <sharedDeck>
       <section name="Shared" group="Deck" />
+      <section neam="Shared2" group="Discard" />"
   </sharedDeck>
 </game>
