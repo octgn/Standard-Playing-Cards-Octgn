@@ -113,7 +113,7 @@ def dealMany(group, count=None):
                 notify("Dealing {} a card.".format(p))
                 for c in shared.Deck.top(1): c.moveTo(p.hand)
 
-def dealManyToTable(group, count=None):
+def dealManyToTable(group, x = 0, y = 0, count=None):
     dealerid = int(getGlobalVariable("dealer"))
     if me._id != dealerid:
         whisper("You are not the dealer player.")
@@ -125,7 +125,7 @@ def dealManyToTable(group, count=None):
         c.moveTo(table)
     notify("Dealing {} cards to table.".format(count))
 
-def dealManyToTableDown(group,count=None):
+def dealManyToTableDown(group,x = 0, y = 0, count=None):
     dealerid = int(getGlobalVariable("dealer"))
     if me._id != dealerid:
         whisper("You are not the dealer player.")
@@ -135,7 +135,7 @@ def dealManyToTableDown(group,count=None):
     if count == None: count = askInteger("Deal how many cards to table face down?", 5)
     for c in shared.Deck.top(count): 
         c.moveTo(table)
-        c.isFaceUp = false
+        c.isFaceUp = False
     notify("Dealing {} cards to table face down.".format(count))
 
 def drawManyDown(group, count = None):
@@ -151,7 +151,7 @@ def mill(group, count = None):
     if len(shared.Deck) == 0: return
     mute()
     if count == None: count = askInteger("Mill how many cards?", 1)
-    for c in shared.Deck.top(count): c.moveTo(me.Discard)
+    for c in shared.Deck.top(count): c.moveTo(shared.Discard)
     notify("{} mills the top {} cards from the Deck.".format(me, count))
 
 def shuffle(group, x = 0, y = 0):
