@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<deck game="8f437fff-fc8f-4abf-a2e6-f77ebff2ac6d" shared="True" >
-  <section name="Shared">
+<deck game="8f437fff-fc8f-4abf-a2e6-f77ebff2ac6d">
+  <section name="Shared" shared="True">
     <card qty="1" id="8c0320d2-7791-4a9b-bbcb-8fc50ffad8c6">Ace of Hearts</card>
     <card qty="1" id="8ad098c1-ffbf-4d12-a141-7f3b6272c4dc">Ace of Spades</card>
     <card qty="1" id="34429bfa-8e7c-4fd4-84d0-d526cef9b9c1">Ace of Diamonds</card>
@@ -54,4 +54,7 @@
     <card qty="1" id="b86fd37d-b11f-4512-b731-25148d320c6d">King of Diamonds</card>
     <card qty="1" id="82b2cf72-ea9e-4cca-a90e-50f8ce98cbe6">King of Clubs</card>
   </section>
+  <section name="Main" shared="False" />
+  <section name="Main2" shared="False" />
+  <notes><![CDATA[]]></notes>
 </deck>
