@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<game name="Standard Playing Cards" id="8f437fff-fc8f-4abf-a2e6-f77ebff2ac6d" octgnVersion="3.1.0.0" version="2.0.0.3" 
-    markersize="25" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tags="cards standard" description="Standard playing cards" setsurl="http://www.octgn.net" 
+<game name="Standard Playing Cards" id="8f437fff-fc8f-4abf-a2e6-f77ebff2ac6d" octgnVersion="3.1.0.0" version="2.0.0.4" 
+    markersize="25" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tags="cards standard" description="Standard playing cards with hand and deck privacy controls" setsurl="http://www.octgn.net" 
 	gameurl="http://www.octgn.net" authors="brine, magnus, kelly elton" iconurl="https://raw.github.com/kellyelton/Standard-Playing-Cards-Octgn/master/src/images/icon.jpg" scriptVersion="3.1.0.1">
     <scripts>
       <script src="scripts/actions.py" />
@@ -10,6 +10,7 @@
     <globalvariables>
         <globalvariable name="dealer" value="1"/>
     </globalvariables>
+    
     <card back="cards/back.png" front="cards/front.png" width="63" height="88" cornerRadius="0">
         <property name="Suit" type="String" textKind="Tokens" />
         <property name="Rank" type="String" textKind="Tokens" />
@@ -27,6 +28,18 @@
         <groupaction menu="SSStatus" shortcut="ctrl+alt+s"  execute="ssstatus" />
         <groupaction menu="Become Dealer" shortcut="ctrl+B" execute="becomedealer" />
         <groupaction menu="Who's Dealer?" execute="whosdealer" />
+        <groupaction menu="Hand Privacy" showExecute="return True">
+            <groupaction menu="Allow Others to View My Hand" execute="setHandProtectionAllow" />
+            <groupaction menu="Block Others from Viewing My Hand" execute="setHandProtectionBlock" />
+            <groupaction menu="Ask Permission to View My Hand" execute="setHandProtectionAsk" />
+            <groupaction menu="Check My Hand Privacy Setting" execute="checkHandProtection" />
+        </groupaction>
+        <groupaction menu="Deck Privacy" showExecute="return True">
+            <groupaction menu="Allow Others to View Deck" execute="setDeckProtectionAllow" />
+            <groupaction menu="Block Others from Viewing Deck" execute="setDeckProtectionBlock" />
+            <groupaction menu="Ask Permission to View Deck" execute="setDeckProtectionAsk" />
+            <groupaction menu="Check Deck Privacy Setting" execute="checkDeckProtection" />
+        </groupaction>
         <cardaction menu="Turn card Sideways" default="True" execute="tap" />
         <cardaction menu="Flip Card" shortcut="ctrl+f" execute="flip" />
         <cardaction menu="Discard Card" shortcut="del" execute="discard" />
@@ -38,12 +51,12 @@
    <player summary="Hand:{#Hand} Score:{#Score}">
     <globalvariable name="standing" value="1" />
     <counter name="Score" icon="counters/score.png" />
-    <hand name="Hand" shortcut="ctrl+H" visibility="me" ordered="False" width="63" height="88" icon="groups/hand.png">
+    <hand name="Hand" shortcut="ctrl+H" visibility="me" ordered="False" width="63" height="88" icon="groups/hand.png" protectionState="ask">
        <cardaction menu="Discard Card" shortcut="del" execute="discard" />
     </hand>
   </player>
   <shared>
-    <group name="Deck" shortcut="ctrl+E" visibility="none" width="63" height="88" icon="groups/deck.png">
+    <group name="Deck" shortcut="ctrl+E" visibility="none" width="63" height="88" icon="groups/deck.png" protectionState="ask">
         <groupaction menu="Deal X Cards" default="True" execute="dealMany" />
         <groupaction menu="Deal X Cards To Table" execute="dealManyToTable" />
         <groupaction menu="Deal X Cards To Table(face down)" execute="dealManyToTableDown" />
