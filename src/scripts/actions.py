@@ -186,3 +186,62 @@ def removemarker(card, x = 0, y = 0):
     mute()
     card.markers[StandardMarker] -= 1
     notify("{} removes a marker from {}.".format(me, card))
+
+# Group Protection Privacy Controls
+def setHandProtectionAsk(group, x = 0, y = 0):
+    """Require others to ask permission before viewing your hand"""
+    mute()
+    me.hand.protectionState = "ask" 
+    notify("{} now requires permission to view their hand.".format(me))
+
+def setHandProtectionAllow(group, x = 0, y = 0):
+    """Allow others to freely view your hand"""
+    mute()
+    me.hand.protectionState = "false"
+    notify("{} allows others to freely view their hand.".format(me))
+
+def setHandProtectionBlock(group, x = 0, y = 0):
+    """Prevent others from viewing your hand"""
+    mute()
+    me.hand.protectionState = "true"
+    notify("{} has blocked others from viewing their hand.".format(me))
+
+def setDeckProtectionAsk(group, x = 0, y = 0):
+    """Require others to ask permission before viewing the deck"""
+    mute()
+    shared.Deck.protectionState = "ask"
+    notify("{} set the deck to require permission to view.".format(me))
+
+def setDeckProtectionAllow(group, x = 0, y = 0):
+    """Allow others to freely view the deck"""
+    mute()
+    shared.Deck.protectionState = "false"
+    notify("{} allows others to freely view the deck.".format(me))
+
+def setDeckProtectionBlock(group, x = 0, y = 0):
+    """Prevent others from viewing the deck"""
+    mute()
+    shared.Deck.protectionState = "true"
+    notify("{} has blocked others from viewing the deck.".format(me))
+
+def checkHandProtection(group, x = 0, y = 0):
+    """Check your current hand privacy setting"""
+    mute()
+    state = me.hand.protectionState
+    if state == "ask":
+        notify("{}'s hand: Others must ask permission to view".format(me))
+    elif state == "true":
+        notify("{}'s hand: Viewing blocked".format(me))
+    else:
+        notify("{}'s hand: Open for all to view".format(me))
+
+def checkDeckProtection(group, x = 0, y = 0):
+    """Check current deck privacy setting"""
+    mute()
+    state = shared.Deck.protectionState
+    if state == "ask":
+        notify("Deck: Others must ask permission to view")
+    elif state == "true":
+        notify("Deck: Viewing blocked")
+    else:
+        notify("Deck: Open for all to view")
