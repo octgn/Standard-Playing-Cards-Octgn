@@ -4,10 +4,17 @@
   "version": "2.0.0.4",
   "versionDate": "2026-03-19T15:00:00Z",
   "description": "Standard playing cards with hand and deck privacy controls",
-  "authors": ["brine", "magnus", "kelly elton"],
+  "authors": [
+    "brine",
+    "magnus",
+    "kelly elton"
+  ],
   "minimumOctgnVersion": "3.1.0.0",
-  "gamePath": "src",
-  "tags": ["cards", "standard"],
+  "gamePath": "dist",
+  "tags": [
+    "cards",
+    "standard"
+  ],
   "iconUrl": "https://raw.githubusercontent.com/octgn/Standard-Playing-Cards-Octgn/master/src/images/icon.jpg",
   "changelog": "Initial manifest for repo-based distribution"
 }

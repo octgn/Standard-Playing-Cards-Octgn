@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<set name="Standard Playing Cards" id="e1318da0-089f-4d67-80ae-c27bdb10d137" gameId="8f437fff-fc8f-4abf-a2e6-f77ebff2ac6d" gameVersion="1.0.0" version="0.1">
+
+<cards>
+ <card id="8c0320d2-7791-4a9b-bbcb-8fc50ffad8c6" name="Ace of Hearts"><property name="Suit" value="Heart"/><property name="Rank" value="Ace"/></card>
+ <card id="8ad098c1-ffbf-4d12-a141-7f3b6272c4dc" name="Ace of Spades"><property name="Suit" value="Spade"/><property name="Rank" value="Ace"/></card>
+ <card id="34429bfa-8e7c-4fd4-84d0-d526cef9b9c1" name="Ace of Diamonds"><property name="Suit" value="Diamond"/><property name="Rank" value="Ace"/></card>
+ <card id="62f610ee-9535-4b5d-9659-7789ceeaafa7" name="Ace of Clubs"><property name="Suit" value="Club"/><property name="Rank" value="Ace"/></card>
+ <card id="57f2aa50-31c8-4bf5-8d5b-4e49985e67e6" name="Two of Hearts"><property name="Suit" value="Heart"/><property name="Rank" value="Two"/></card>
+ <card id="d769f34d-4528-4695-8fe8-35923589ad1a" name="Two of Spades"><property name="Suit" value="Spade"/><property name="Rank" value="Two"/></card>
+ <card id="5db143b9-3111-4b44-b1f9-95ab99609222" name="Two of Diamonds"><property name="Suit" value="Diamond"/><property name="Rank" value="Two"/></card>
+ <card id="8a2d39c8-b45a-4b61-8ff2-38eca10b712c" name="Two of Clubs"><property name="Suit" value="Club"/><property name="Rank" value="Two"/></card>
+ <card id="656fdd87-fdbf-483f-a42b-f5f293bac775" name="Three of Hearts"><property name="Suit" value="Heart"/><property name="Rank" value="Three"/></card>
+ <card id="aa31c0d5-c521-4c5f-bf42-ba53624bec27" name="Three of Spades"><property name="Suit" value="Spade"/><property name="Rank" value="Three"/></card>
+ <card id="1d81446d-8654-4643-b356-8247533fd848" name="Three of Diamonds"><property name="Suit" value="Diamond"/><property name="Rank" value="Three"/></card>
+ <card id="5f428d25-fab0-4526-aa65-ecbf1c900413" name="Three of Clubs"><property name="Suit" value="Club"/><property name="Rank" value="Three"/></card>
+ <card id="52c2de6e-d3f7-4c0c-88d4-10ddf54e2990" name="Four of Hearts"><property name="Suit" value="Heart"/><property name="Rank" value="Four"/></card>
+ <card id="e0c7ea89-b0e6-4364-8b50-a12ce09c2b29" name="Four of Spades"><property name="Suit" value="Spade"/><property name="Rank" value="Four"/></card>
+ <card id="9f8e32b0-72b3-4eac-9ce3-be3eeee4d45a" name="Four of Diamonds"><property name="Suit" value="Diamond"/><property name="Rank" value="Four"/></card>
+ <card id="cdd22c47-6b4c-4218-8b1f-c929c96841ef" name="Four of Clubs"><property name="Suit" value="Club"/><property name="Rank" value="Four"/></card>
+ <card id="c253af0a-5069-44ae-8418-67ca8f5c480d" name="Five of Hearts"><property name="Suit" value="Heart"/><property name="Rank" value="Five"/></card>
+ <card id="70a7ae36-6642-472e-8c57-3387eb05e364" name="Five of Spades"><property name="Suit" value="Spade"/><property name="Rank" value="Five"/></card>
+ <card id="e25680bd-58cc-4e44-aa47-c4471cee6881" name="Five of Diamonds"><property name="Suit" value="Diamond"/><property name="Rank" value="Five"/></card>
+ <card id="ddda24cd-2854-4e3c-9a6b-f0e70cd39a8a" name="Five of Clubs"><property name="Suit" value="Club"/><property name="Rank" value="Five"/></card>
+ <card id="0ed89112-d3a9-49b1-8d94-5263497a8be0" name="Six of Hearts"><property name="Suit" value="Heart"/><property name="Rank" value="Six"/></card>
+ <card id="fc375cee-2d02-4887-8e61-8d573fcb0426" name="Six of Spades"><property name="Suit" value="Spade"/><property name="Rank" value="Six"/></card>
+ <card id="c4e7cb23-1553-465c-9246-a856788223ad" name="Six of Diamonds"><property name="Suit" value="Diamond"/><property name="Rank" value="Six"/></card>
+ <card id="ee604810-b6e8-45dc-919e-757a8cd67b16" name="Six of Clubs"><property name="Suit" value="Club"/><property name="Rank" value="Six"/></card>
+ <card id="e34495a1-da0f-406a-affb-dcc0f4d68083" name="Seven of Hearts"><property name="Suit" value="Heart"/><property name="Rank" value="Seven"/></card>
+ <card id="b113943a-4e59-4606-b9df-45d77dfdbf83" name="Seven of Spades"><property name="Suit" value="Spade"/><property name="Rank" value="Seven"/></card>
+ <card id="21bb24fe-7b02-4b4b-b6a9-10368f55517c" name="Seven of Diamonds"><property name="Suit" value="Diamond"/><property name="Rank" value="Seven"/></card>
+ <card id="d240101a-88f7-428e-a5d8-89fd802b84cc" name="Seven of Clubs"><property name="Suit" value="Club"/><property name="Rank" value="Seven"/></card>
+ <card id="46db2892-af8a-45d1-b710-d8f063eed105" name="Eight of Hearts"><property name="Suit" value="Heart"/><property name="Rank" value="Eight"/></card>
+ <card id="54db979d-bed4-4e13-83be-afe9db218c44" name="Eight of Spades"><property name="Suit" value="Spade"/><property name="Rank" value="Eight"/></card>
+ <card id="bc566269-3408-45df-8e28-9494f03194ab" name="Eight of Diamonds"><property name="Suit" value="Diamond"/><property name="Rank" value="Eight"/></card>
+ <card id="79155ceb-0625-42fc-947c-a411b7f9585f" name="Eight of Clubs"><property name="Suit" value="Club"/><property name="Rank" value="Eight"/></card>
+ <card id="0865f779-179f-4821-ae29-0a1fc674aa01" name="Nine of Hearts"><property name="Suit" value="Heart"/><property name="Rank" value="Nine"/></card>
+ <card id="0763abdb-fb48-47a5-8380-7726b7bb0658" name="Nine of Spades"><property name="Suit" value="Spade"/><property name="Rank" value="Nine"/></card>
+ <card id="6ae6e65c-9a82-4d1e-8288-326eb2829a72" name="Nine of Diamonds"><property name="Suit" value="Diamond"/><property name="Rank" value="Nine"/></card>
+ <card id="034bedbd-8706-4218-9ee7-ae5787e5b861" name="Nine of Clubs"><property name="Suit" value="Club"/><property name="Rank" value="Nine"/></card>
+ <card id="ef49e12f-73fb-477a-9210-e9ab0469e6a8" name="Ten of Hearts"><property name="Suit" value="Heart"/><property name="Rank" value="Ten"/></card>
+ <card id="53875a93-95a0-44e0-bd20-311ea00709b4" name="Ten of Spades"><property name="Suit" value="Spade"/><property name="Rank" value="Ten"/></card>
+ <card id="cc813430-ad87-430c-81a0-0d606cce918f" name="Ten of Diamonds"><property name="Suit" value="Diamond"/><property name="Rank" value="Ten"/></card>
+ <card id="f84eb6e6-dd9b-423a-8fb6-6e7cff2a7d76" name="Ten of Clubs"><property name="Suit" value="Club"/><property name="Rank" value="Ten"/></card>
+ <card id="23d73ac9-00e4-4c74-b759-ff55475987c7" name="Jack of Hearts"><property name="Suit" value="Heart"/><property name="Rank" value="Jack"/></card>
+ <card id="0a1f8d6c-00a7-452f-8ef8-0459e8c4d6ed" name="Jack of Spades"><property name="Suit" value="Spade"/><property name="Rank" value="Jack"/></card>
+ <card id="39df7349-e420-4c9f-a9fc-aa5e52e8419c" name="Jack of Diamonds"><property name="Suit" value="Diamond"/><property name="Rank" value="Jack"/></card>
+ <card id="30a392dc-8810-4577-97b3-82db4d09ac49" name="Jack of Clubs"><property name="Suit" value="Club"/><property name="Rank" value="Jack"/></card>
+ <card id="0f6caf74-4bba-4d54-9361-bb807baaac53" name="Queen of Hearts"><property name="Suit" value="Heart"/><property name="Rank" value="Queen"/></card>
+ <card id="ec1ba723-fb84-4a8b-b0b5-7de09619173d" name="Queen of Spades"><property name="Suit" value="Spade"/><property name="Rank" value="Queen"/></card>
+ <card id="634e5c26-eec5-4b63-be94-16f6cae62cac" name="Queen of Diamonds"><property name="Suit" value="Diamond"/><property name="Rank" value="Queen"/></card>
+ <card id="12903676-cdd5-47d0-af4e-410cd734edd9" name="Queen of Clubs"><property name="Suit" value="Club"/><property name="Rank" value="Queen"/></card>
+ <card id="0d81dd02-06ae-4c8c-ac8d-6256e88a8156" name="King of Hearts"><property name="Suit" value="Heart"/><property name="Rank" value="King"/></card>
+ <card id="21c01754-5884-46b9-a72d-2c544cc99cda" name="King of Spades"><property name="Suit" value="Spade"/><property name="Rank" value="King"/></card>
+ <card id="b86fd37d-b11f-4512-b731-25148d320c6d" name="King of Diamonds"><property name="Suit" value="Diamond"/><property name="Rank" value="King"/></card>
+ <card id="82b2cf72-ea9e-4cca-a90e-50f8ce98cbe6" name="King of Clubs"><property name="Suit" value="Club"/><property name="Rank" value="King"/></card>
+ <card id="a3b553f9-3454-4f4b-9469-5f1b456dda76" name="Red Joker"><property name="Suit" value="Red"/><property name="Rank" value="Joker"/></card>
+ <card id="e9d7579b-0c04-46db-96da-588c62cb4c37" name="Black Joker"><property name="Suit" value="Black"/><property name="Rank" value="Joker"/></card>
+</cards>
+
+</set>
